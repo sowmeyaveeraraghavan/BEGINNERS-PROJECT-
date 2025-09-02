@@ -41,8 +41,8 @@ def on_leave(e):
     e.widget['style'] = "TButton"
 
 root = tk.Tk()
-root.title("Rock, Paper, Scissors")
-root.geometry("1200x800")
+root.title("Rock-Paper-Scissors")
+root.state("zoomed")   
 root.config(bg="#222831")
 
 # Modern style
@@ -68,7 +68,7 @@ style.configure("Hover.TButton",
                 borderwidth=0)
 
 # Labels
-title = tk.Label(root, text="Rock, Paper, Scissors", fg="white", bg="#222831",
+title = tk.Label(root, text="Rock-Paper-Scissors", fg="white", bg="#222831",
                  font=("Calibri", 36, "bold"))
 title.pack(pady=20)
 
